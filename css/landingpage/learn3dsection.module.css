@@ -34,9 +34,22 @@
     text-decoration: none;
 }
 
-.text-link a:hover {
-    text-decoration: underline;
+.text-link:hover .fa-caret-right {
+    animation: rightarrw 0.7s ease forwards;
 }
+
+@keyframes rightarrw {
+    0% {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 992px) {

@@ -1,7 +1,8 @@
-console.log('connected');
 
 let productsection = document.querySelector('.products-section');
 let megamenu = document.querySelector('.mega-menu');
+const navbar = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
 
 productsection.addEventListener('onmouseleave', (e) => {
     megamenu.style.display = 'none';
@@ -26,4 +27,18 @@ if (width < 991) {
 
 
 
-console.log(width);
+
+
+navbar.addEventListener("click", () => {
+    navMenu.classList.toggle('showNav');
+    navbar.classList.toggle('showNavActive');
+
+
+    if (navbar.classList.contains('showNavActive')) {
+        navbar.innerHTML = '✚';
+    } else {
+        navbar.innerHTML = "☰";
+    }
+})
+
+

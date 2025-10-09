@@ -331,6 +331,7 @@ img.product-img {
     gap: 10px;
 }
 
+
 /* Mobile Menu Hidden */
 @media (max-width: 991px) {
     .user {
@@ -339,11 +340,11 @@ img.product-img {
 
     .nav-menu {
         position: fixed;
-        top: 40px;
-        right: 0;
+        top: 63px !important;
+        left: -100%;
         width: 100%;
         color: black !important;
-        background: #ddd;
+        background: white !important;
         height: 100vh;
         flex-direction: column;
         /* background: #fff; */
@@ -354,6 +355,10 @@ img.product-img {
         z-index: 2000;
     }
 
+    .crossIcon {
+        transform: rotate(45deg);
+        font-size: 35px;
+    }
 
     .nav-toggle {
         display: block;
@@ -434,6 +439,19 @@ img.product-img {
 
     .btn {
         text-wrap: nowrap;
+    }
+
+    .showNav {
+        left: 0% !important;
+    }
+
+    .showNavActive {
+        transform: rotate(-45deg);
+    }
+
+
+    .language-dropdown {
+        display: none;
     }
 
 }
