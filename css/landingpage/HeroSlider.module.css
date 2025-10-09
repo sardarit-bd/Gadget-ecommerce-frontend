@@ -187,4 +187,8 @@
     .carousel-btn {
         width: 100%;
     }
+
+    .carousel-content {
+        padding: 0 15px;
+    }
 }

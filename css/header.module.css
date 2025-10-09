@@ -47,11 +47,26 @@
 }
 
 
+.nav-item>span {
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px !important;
+    transition: all .5s ease;
+}
+
+.nav-item>span:hover {
+
+    border-bottom: 1px solid #fff;
+}
+
+
 
 
 .mega-menu {
     position: fixed !important;
-    top: 55px;
+    top: 62px;
     left: 0;
     width: 100%;
     border-radius: 0 0 12px 12px;
@@ -86,10 +101,11 @@
 .transparentdiv {
     position: absolute;
     left: 0;
-    top: 30px;
+    top: 40px !important;
+    display: block;
     background: transparent;
     height: 30px;
-    width: 100%;
+    width: 0px;
 }
 
 
@@ -110,7 +126,11 @@
     background-color: #888;
 }
 
+.navitem_product {
+    z-index: 99;
+    cursor: pointer;
 
+}
 
 .navitem_product:hover .mega-menu {
     display: flex;
@@ -118,7 +138,9 @@
     animation: fadeIn 0.3s ease;
 }
 
-
+.navitem_product:hover .transparentdiv {
+    width: 100%;
+}
 
 
 
@@ -141,13 +163,12 @@
 
 .lang-menu {
     position: absolute;
-    top: 25px;
-    right: 0;
+    top: 22px;
+    right: -17px;
     background: white;
     list-style: none;
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    display: none;
     padding: 5px 0;
     min-width: 70px;
 }
@@ -163,8 +184,22 @@
     background: #F0F0F0;
 }
 
+.lang-menuwrper {
+    position: relative;
+    display: none;
+}
+
+.lanmenuTransparent {
+    height: 22px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
 /* Hover effect to open dropdown */
-.language-dropdown:hover .lang-menu {
+.language-dropdown:hover .lang-menuwrper {
     display: block;
 }
 
@@ -349,7 +384,6 @@ img.product-img {
         flex-direction: column;
         /* background: #fff; */
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-        padding-top: 80px;
         transition: right 0.4s ease-in-out;
         overflow-y: auto;
         z-index: 2000;
@@ -372,6 +406,10 @@ img.product-img {
         color: black !important;
     }
 
+
+    .nav-item>span {
+        color: black !important;
+    }
 
     .active {
         display: flex;
@@ -404,6 +442,28 @@ img.product-img {
 
         border-bottom: none;
     }
+
+
+
+    .nav-item>span {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+
+    .nav-item>span:hover {
+
+        border-bottom: none;
+    }
+
+
+
+
 
 
 

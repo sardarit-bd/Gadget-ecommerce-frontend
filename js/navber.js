@@ -4,9 +4,6 @@ let megamenu = document.querySelector('.mega-menu');
 const navbar = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 
-productsection.addEventListener('onmouseleave', (e) => {
-    megamenu.style.display = 'none';
-})
 
 
 let navitem_product = document.querySelector('.navitem_product');
