@@ -1,0 +1,181 @@
+/* Learn Section */
+.learn-section {
+    background-color: #FFFFFF;
+}
+
+.learn-header-text {
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.learn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    padding-bottom: 50px;
+}
+
+.learn-main-card {
+    display: flex;
+    background-size: cover;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-link {
+    font-size: 16px;
+    color: var(--branColor);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.text-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .learn-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .learn-grid {
+        gap: 40px;
+    }
+
+    .learn-main-card {
+        padding: 40px 30px;
+    }
+
+    .learn-main-card h2 {
+        font-size: 2rem;
+    }
+
+    .learn-main-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .learn-right {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .learn-section {
+        padding: 60px 0;
+    }
+
+    .learn-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .learn-secondary-cards {
+        flex-direction: column;
+    }
+
+    .learn-main-card {
+        padding: 35px 25px;
+    }
+
+    .learn-main-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .learn-main-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .learn-right {
+        padding: 25px;
+    }
+
+    .reviews-header h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .learn-section {
+        padding: 50px 0;
+    }
+
+    .learn-main-card {
+        padding: 30px 20px;
+    }
+
+    .learn-main-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .learn-main-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .secondary-card {
+        padding: 25px 20px;
+    }
+
+    .secondary-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .learn-right {
+        padding: 20px;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-title h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.learn-left>* {
+    animation: fadeInLeft 0.6s ease forwards;
+}
+
+.learn-right>* {
+    animation: fadeInRight 0.6s ease forwards;
+}
+
+.learn-main-card {
+    animation-delay: 0.1s;
+}
+
+.learn-secondary-cards {
+    animation-delay: 0.2s;
+}

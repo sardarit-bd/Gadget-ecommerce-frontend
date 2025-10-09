@@ -1,0 +1,93 @@
+.video-section {
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 50px;
+}
+
+.video-card {
+    background: #F9F9F9;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    min-width: 320px;
+    flex-shrink: 0;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 10px;
+}
+
+.video-card p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: left;
+    padding: 0 5px;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.nav-btn:hover {
+    color: #f00;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .video-card {
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .video-card {
+        min-width: 90%;
+    }
+
+    .nav-btn {
+        font-size: 1.8rem;
+    }
+}

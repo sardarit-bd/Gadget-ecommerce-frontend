@@ -1,0 +1,351 @@
+/* ---- lightweight row/col (no framework) ---- */
+.site-footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+.site-footer .col {
+    flex: 1 1 180px;
+    min-width: 180px
+}
+
+/* ---- Footer base ---- */
+.site-footer {
+    background: #f5f6f7;
+    /* light gray like screenshot */
+    color: #2b2b2b;
+    padding: 32px 0 20px;
+    border-top: 1px solid #e6e8eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.45;
+}
+
+.site-footer a {
+    color: #334155;
+    text-decoration: none
+}
+
+.site-footer a:hover {
+    color: var(--branColor);
+    text-decoration: underline
+}
+
+/* ---- Top area ---- */
+.f-top {
+    align-items: flex-start;
+    margin-bottom: 28px
+}
+
+.f-brand {
+    max-width: 340px;
+    flex: 1 1 260px
+}
+
+.f-title {
+    margin: 0 0 8px;
+    color: #0f172a;
+    font-size: 18px
+}
+
+.f-desc {
+    margin: 0 0 8px;
+    color: #475569
+}
+
+.f-underline {
+    display: inline-block
+}
+
+.f-head {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 16px
+}
+
+.f-list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.f-list li {
+    margin: 8px 0
+}
+
+/* ---- Payments ---- */
+
+.f-pay {
+    width: fit-content;
+}
+
+.f-pay-title {
+    margin: 6px 0 10px;
+    color: #0f172a;
+    font-size: 14px
+}
+
+
+.f-powered {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px
+}
+
+.f-powered .stripe-logo {
+    height: auto;
+    width: 300px
+}
+
+.f-cards {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+.f-cards img {
+    height: 24px;
+    display: block;
+    filter: saturate(.95)
+}
+
+/* ---- Bottom bar ---- */
+.f-bottom {
+    align-items: center;
+    border-top: 1px solid #e6e8eb;
+    padding-top: 16px
+}
+
+.f-social {
+    flex: 1 1 160px;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.paymentwrper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.f-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    color: #111
+}
+
+.f-social a:hover {
+    background: #0f62fe;
+    color: #fff
+}
+
+.f-social .tiktok svg {
+    width: 18px;
+    height: 18px;
+    fill: #111
+}
+
+.f-social .tiktok:hover svg {
+    fill: #fff
+}
+
+.f-legal {
+    flex: 2 1 320px;
+    min-width: 220px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.f-legal .dot {
+    color: #94a3b8
+}
+
+.f-topbtn {
+    flex: 0 0 auto;
+    min-width: 80px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.f-up {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: var(--branColor);
+    color: #fff !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
+}
+
+.f-up:hover {
+    background: var(--branColor);
+    color: #fff
+}
+
+
+
+
+
+
+/* Newsletter Section */
+.newsletter-section {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+
+.newsletter-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #ddd;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footermiddle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: #ffffff;
+    color: black;
+    font-size: 1rem;
+    border-color: var(--branColor);
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--branColor);
+}
+
+.newsletter-form button {
+    padding: 15px 30px;
+    background: var(--branColor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---- Responsiveness ---- */
+@media (max-width: 1200px) {
+    .f-pay {
+        flex: 1 1 300px;
+        margin-left: 0
+    }
+}
+
+@media (max-width: 992px) {
+    .site-footer .col {
+        flex: 1 1 220px
+    }
+
+    .f-legal {
+        text-align: left;
+        justify-content: flex-start
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer .row {
+        gap: 20px
+    }
+
+    .f-pay {
+        order: 6
+    }
+
+
+    .footermiddle {
+
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+    /* payment block drops below columns for clarity */
+}
+
+@media (max-width: 576px) {
+    .site-footer {
+        padding: 28px 0 18px
+    }
+
+    .site-footer .col {
+        flex: 1 1 100%
+    }
+
+    .f-top {
+        margin-bottom: 22px
+    }
+
+    .f-social {
+        order: 1
+    }
+
+    .f-legal {
+        order: 2
+    }
+
+    .f-topbtn {
+        order: 3;
+        justify-content: flex-start
+    }
+
+    .f-pay-card {
+        max-width: 100%
+    }
+}

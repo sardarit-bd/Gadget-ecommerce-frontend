@@ -1,0 +1,149 @@
+/* Tools Section */
+.tools-section {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #1A1A1A 0%, #333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.tool-card {
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8F9FA;
+    padding: 50px !important;
+    transition: all 0.3s ease;
+    padding: 20px !important;
+}
+
+/* Tools Grid */
+.tool-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tool-text {
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.tool-tag {
+    display: block;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.tool-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1A1A1A;
+}
+
+.tool-links {
+    display: flex;
+    gap: 15px;
+}
+
+.tool-link {
+    color: var(--branColor);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.tool-link:hover .fa-caret-right {
+    animation: rightarrw 0.7s ease forwards;
+}
+
+@keyframes rightarrw {
+    0% {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.tool-img {
+    flex-shrink: 0;
+    width: 260px;
+    text-align: center;
+}
+
+.tool-img img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tool-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .tool-img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tool-card {
+        padding: 25px;
+    }
+
+    .tool-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .tool-link {
+        font-size: 0.9rem;
+    }
+}

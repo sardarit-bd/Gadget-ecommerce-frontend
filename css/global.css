@@ -1,0 +1,49 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --branColor: #3d65ad;
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #000000;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-primaria);
+    overflow-x: hidden;
+}
+
+
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+
+.containersforswiper {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 1200px;
+
+}
+
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 30px;
+}
