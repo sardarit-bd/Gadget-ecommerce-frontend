@@ -127,6 +127,16 @@
     color: #ddd;
 }
 
+
+@media (max-width:992px) {
+    .uses-grid {
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .uses-grid {
@@ -134,7 +144,7 @@
     }
 
     .use-card {
-        height: 200px;
+        height: 300px;
     }
 
     .use-content h3 {
@@ -148,7 +158,7 @@
 
 @media (max-width: 480px) {
     .use-card {
-        height: 180px;
+        height: 260px;
     }
 
     .use-content {

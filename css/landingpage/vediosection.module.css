@@ -55,20 +55,46 @@
     padding: 0 5px;
 }
 
-/* Navigation Buttons */
-.nav-btn {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #333;
-    cursor: pointer;
-    padding: 10px;
-    transition: 0.3s;
-    z-index: 5;
+.vedio_slider_container {
+    position: relative;
 }
 
-.nav-btn:hover {
-    color: #f00;
+#prevBtn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--branColor);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 35%;
+    left: -5px;
+    z-index: 40;
+    cursor: pointer;
+}
+
+#nextBtn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--branColor);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 35%;
+    right: -5px;
+    z-index: 40;
+    cursor: pointer;
 }
 
 /* Responsive */

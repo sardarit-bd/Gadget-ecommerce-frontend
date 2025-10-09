@@ -155,6 +155,10 @@
         overflow: hidden;
     }
 
+    .carousel-text {
+        text-align: center;
+    }
+
     .carousel-text h2 {
         font-size: 2.4rem;
     }

@@ -94,6 +94,7 @@
     background: #fff;
     height: 100% !important;
     overflow-y: scroll;
+    overflow-x: hidden;
 
 }
 
