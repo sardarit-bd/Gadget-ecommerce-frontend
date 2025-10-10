@@ -66,7 +66,7 @@
 
 .mega-menu {
     position: fixed !important;
-    top: 62px;
+    top: 60px;
     left: 0;
     width: 100%;
     border-radius: 0 0 12px 12px;
@@ -367,6 +367,12 @@ img.product-img {
     gap: 10px;
 }
 
+.cartIconsWrper {
+    transform: translateY(4px);
+    margin-right: 2px;
+    cursor: pointer;
+}
+
 
 /* Mobile Menu Hidden */
 @media (max-width: 991px) {
@@ -444,6 +450,9 @@ img.product-img {
         border-bottom: none;
     }
 
+    .cartIconsWrper {
+        display: none;
+    }
 
 
     .nav-item>span {

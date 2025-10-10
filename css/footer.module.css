@@ -1,88 +1,106 @@
-/* ---- lightweight row/col (no framework) ---- */
-.site-footer .row {
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.bottomToTopBtnWrper {
+    position: fixed !important;
+    top: 90%;
+    right: 80px;
+}
+
+.bottomToTopBtn {
+    background: var(--branColor);
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px
+    align-items: center;
+    justify-content: center;
 }
 
-.site-footer .col {
-    flex: 1 1 180px;
-    min-width: 180px
+.bottomToTopBtn:hover .fa-arrow-up {
+    animation: bounce 0.5s ease infinite;
 }
 
-/* ---- Footer base ---- */
-.site-footer {
-    background: #f5f6f7;
-    /* light gray like screenshot */
-    color: #2b2b2b;
-    padding: 32px 0 20px;
-    border-top: 1px solid #e6e8eb;
-    font-family: Arial, sans-serif;
-    line-height: 1.45;
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
-.site-footer a {
-    color: #334155;
-    text-decoration: none
+/* Newsletter Section */
+.newsletter-section {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
 }
 
-.site-footer a:hover {
-    color: var(--branColor);
-    text-decoration: underline
+.newsletter-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #ddd;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* ---- Top area ---- */
-.f-top {
-    align-items: flex-start;
-    margin-bottom: 28px
+.f-powered {
+    margin-top: 15px;
 }
 
-.f-brand {
-    max-width: 340px;
-    flex: 1 1 260px
+.f-powered .stripe-logo {
+    height: auto;
+    width: 240px !important;
+    z-index: 9;
 }
 
-.f-title {
-    margin: 0 0 8px;
-    color: #0f172a;
-    font-size: 18px
+.newsletter-formWrper {
+    display: flex;
+    margin: 15px 0;
+    justify-content: center;
+    width: 100%;
+    border: 1px soldi red;
 }
 
-.f-desc {
-    margin: 0 0 8px;
-    color: #475569
+.newsletter-form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 500px;
 }
 
-.f-underline {
-    display: inline-block
+.newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s;
 }
 
-.f-head {
-    margin: 0 0 10px;
-    color: #0f172a;
-    font-size: 16px
-}
-
-.f-list {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-.f-list li {
-    margin: 8px 0
-}
-
-/* ---- Payments ---- */
-
-.f-pay {
-    width: fit-content;
-}
-
-.f-pay-title {
-    margin: 6px 0 10px;
-    color: #0f172a;
-    font-size: 14px
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--branColor);
 }
 
 
@@ -100,252 +118,267 @@
     width: 300px
 }
 
-.f-cards {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap
-}
-
-.f-cards img {
-    height: 24px;
-    display: block;
-    filter: saturate(.95)
-}
-
-/* ---- Bottom bar ---- */
-.f-bottom {
-    align-items: center;
-    border-top: 1px solid #e6e8eb;
-    padding-top: 16px
-}
-
-.f-social {
-    flex: 1 1 160px;
-    min-width: 140px;
-    display: flex;
-    align-items: center;
-
-
-}
-
-.paymentwrper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.f-social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    margin-right: 8px;
-    border-radius: 6px;
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    color: #111
-}
-
-.f-social a:hover {
-    background: #0f62fe;
-    color: #fff
-}
-
-.f-social .tiktok svg {
-    width: 18px;
-    height: 18px;
-    fill: #111
-}
-
-.f-social .tiktok:hover svg {
-    fill: #fff
-}
-
-.f-legal {
-    flex: 2 1 320px;
-    min-width: 220px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    color: #64748b;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.f-legal .dot {
-    color: #94a3b8
-}
-
-.f-topbtn {
-    flex: 0 0 auto;
-    min-width: 80px;
-    display: flex;
-    justify-content: flex-end
-}
-
-.f-up {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    background: var(--branColor);
-    color: #fff !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1)
-}
-
-.f-up:hover {
-    background: var(--branColor);
-    color: #fff
-}
-
-
-
-
-
-
-/* Newsletter Section */
-.newsletter-section {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-
-}
-
-.newsletter-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    font-weight: 400;
-    color: #ddd;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footermiddle {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 30px;
-}
-
-
-.newsletter-form {
-    display: flex;
-    max-width: 500px;
-    margin: 0 auto;
-    gap: 10px;
-}
-
-.newsletter-form input {
-    flex: 1;
-    padding: 15px 20px;
-    border-radius: 5px;
-    background: #ffffff;
-    color: black;
-    font-size: 1rem;
-    border-color: var(--branColor);
-}
-
-.newsletter-form input:focus {
-    outline: none;
-    border-color: var(--branColor);
-}
-
 .newsletter-form button {
     padding: 15px 30px;
     background: var(--branColor);
     color: white;
+    font-size: 16x;
     border: none;
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
     white-space: nowrap;
+    transition: .5s;
+}
+
+.newsletter-form button:hover {
+    background: #274783;
+}
+
+/* Footer Links */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+
+.footer-column p {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+    color: var(--branColor);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-policies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-policies a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-policies a:hover {
+    color: var(--branColor);
+}
+
+.copyright p {
+    color: #999;
+    font-size: 0.9rem;
 }
 
 
 
 
+.paymentDivWrper {
+    margin-top: 20px;
+}
 
 
+.payemntandsubcribeWrper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.payemntandsubcribeWrper>div {
+
+    width: 100%;
+}
+
+.payemntandsubcribeWrper>div:first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.subbtnandinputerWrper {
+    display: flex;
+    align-items: center;
+}
 
 
+.payemntandsubcribeWrper>div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
 
-
-/* ---- Responsiveness ---- */
+/* Responsive Styles */
 @media (max-width: 1200px) {
-    .f-pay {
-        flex: 1 1 300px;
-        margin-left: 0
+
+
+
+    .bottomToTopBtnWrper {
+        bottom: 40px;
+        right: 40px;
     }
 }
 
-@media (max-width: 992px) {
-    .site-footer .col {
-        flex: 1 1 220px
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
 
-    .f-legal {
-        text-align: left;
-        justify-content: flex-start
+
+    .bottomToTopBtnWrper {
+        bottom: 40px;
+        right: 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .site-footer .row {
-        gap: 20px
+    .main-content h1 {
+        font-size: 2.5rem;
     }
 
-    .f-pay {
-        order: 6
+    .main-content p {
+        font-size: 1.1rem;
     }
 
+    .newsletter-section h3 {
+        font-size: 1.3rem;
+    }
 
-    .footermiddle {
-
+    .newsletter-form {
         flex-direction: column;
-        align-items: flex-start;
+    }
 
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-policies {
+        justify-content: center;
     }
 
 
-    /* payment block drops below columns for clarity */
+    .bottomToTopBtnWrper {
+        bottom: 40px;
+        right: 40px;
+    }
+
+
 }
 
 @media (max-width: 576px) {
-    .site-footer {
-        padding: 28px 0 18px
+    .main-content {
+        padding: 60px 0;
+        min-height: 50vh;
     }
 
-    .site-footer .col {
-        flex: 1 1 100%
+    .main-content h1 {
+        font-size: 2rem;
     }
 
-    .f-top {
-        margin-bottom: 22px
+    .footer {
+        padding: 40px 0 20px;
     }
 
-    .f-social {
-        order: 1
+    .newsletter-section {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
     }
 
-    .f-legal {
-        order: 2
+    .newsletter-section h3 {
+        font-size: 1.2rem;
     }
 
-    .f-topbtn {
-        order: 3;
-        justify-content: flex-start
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .footer-policies {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    .footer-policies a {
+        font-size: 0.85rem;
     }
 
     .f-pay-card {
         max-width: 100%
     }
+
+    .copyright p {
+        font-size: 0.85rem;
+    }
+
+
+
+    .bottomToTopBtnWrper {
+        bottom: 20px;
+        right: 25px;
+    }
+
 }

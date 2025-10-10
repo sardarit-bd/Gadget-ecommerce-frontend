@@ -1,5 +1,7 @@
 .video-section {
     text-align: center;
+    padding-bottom: 50px;
+    overflow-x: hidden;
 }
 
 .video-section h2 {
@@ -29,11 +31,10 @@
 .video-card {
     background: #F9F9F9;
     border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     min-width: 320px;
     flex-shrink: 0;
-    padding: 10px;
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .video-card:hover {
@@ -45,57 +46,38 @@
     height: 180px;
     border: none;
     border-radius: 10px;
+    z-index: 999999999;
+    pointer-events: none;
 }
 
 .video-card p {
     font-size: 0.95rem;
     font-weight: 500;
-    margin-top: 10px;
     text-align: left;
     padding: 0 5px;
+    position: absolute;
+    bottom: -20px;
+    color: black;
+    left: 0;
+    z-index: 999999999999;
+
 }
 
 .vedio_slider_container {
     position: relative;
 }
 
-#prevBtn {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--branColor);
-    color: #fff;
-    font-size: 15px;
-    border-radius: 100%;
-    border: none;
-    outline: none;
-    position: absolute;
-    top: 35%;
-    left: -5px;
-    z-index: 40;
-    cursor: pointer;
+
+
+.video-swiper {
+    width: 100%;
+    overflow: hidden;
 }
 
-#nextBtn {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--branColor);
-    color: #fff;
-    font-size: 15px;
-    border-radius: 100%;
-    border: none;
-    outline: none;
-    position: absolute;
-    top: 35%;
-    right: -5px;
-    z-index: 40;
-    cursor: pointer;
+.swiper-slide.video-card {
+    min-width: 320px;
 }
+
 
 /* Responsive */
 @media (max-width: 992px) {

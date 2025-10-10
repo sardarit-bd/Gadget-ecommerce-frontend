@@ -232,6 +232,9 @@
                             </div>
 
                         </div>
+                        <div class="cartIconsWrper">
+                            <img src="./assest/cart.png" alt="cart-icon">
+                        </div>
                         <div>
                             <button class="user">
                                 <i class="fa-regular fa-user"></i>
@@ -518,46 +521,29 @@
             <h2>Check Out What the Pros Are Saying</h2>
         </div>
         <div class="container">
-            <div class="vedio_slider_container">
-                <button id="prevBtn">
-                    <i class="fa-solid fa-caret-left"></i>
-                </button>
-                <div class="video-slider">
-                    <div class="video-card">
+            <div class="swiper video-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide video-card">
                         <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            title="Bambu Lab A1 Combo Review" allowfullscreen></iframe>
+                            allowfullscreen></iframe>
                         <p>Crafter 3d A1 Combo | 2024 Review</p>
                     </div>
-                    <div class="video-card">
+                    <div class="swiper-slide video-card">
                         <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            title="Bambu Lab X1C Review" allowfullscreen></iframe>
+                            allowfullscreen></iframe>
                         <p>Crafter 3d X1C | Speed at What Cost?</p>
                     </div>
-                    <div class="video-card">
+                    <div class="swiper-slide video-card">
                         <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            title="Bambu P1P Review" allowfullscreen></iframe>
+                            allowfullscreen></iframe>
                         <p>The BEST 3D Printer I’ve Ever Used?</p>
                     </div>
-                    <div class="video-card">
+                    <div class="swiper-slide video-card">
                         <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            title="Bambu Lab X1C Review" allowfullscreen></iframe>
-                        <p>Crafter 3d X1C | Speed at What Cost?</p>
-                    </div>
-
-                    <div class="video-card">
-                        <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            title="Bambu Lab X1C Review" allowfullscreen></iframe>
-                        <p>Crafter 3d X1C | Speed at What Cost?</p>
-                    </div>
-                    <div class="video-card">
-                        <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            title="3D Printing Gadgets" allowfullscreen></iframe>
+                            allowfullscreen></iframe>
                         <p>Top Gadgets Tested on Bambu Lab Printer</p>
                     </div>
                 </div>
-                <button id="nextBtn">
-                    <i class="fa-solid fa-caret-right"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -649,111 +635,97 @@
 
 
     <!-- footer section start from here -->
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="container">
-
-            <!-- ===== Top Row ===== -->
-            <div class="row f-top">
-                <!-- Brand / About -->
-                <div class="col f-brand">
-                    <h4 class="f-title">Crafter3D</h4>
-                    <p class="f-desc">
-                        Crafter3D es una comunidad dedicada a crear productos innovadores
-                        que apoyan y promueven el desarrollo de la impresión 3D.
-                    </p>
-                    <a href="#" class="f-underline">About Us</a>
-                </div>
-
-                <!-- Cols -->
-                <div class="col f-col">
-                    <h5 class="f-head">Crafter M6</h5>
-                    <ul class="f-list">
-                        <li><a href="#">Specifications</a></li>
-                        <li><a href="#">Bill of Materials (BOM)</a></li>
-                        <li><a href="#">Commercial Articles</a></li>
-                    </ul>
-                </div>
-
-                <div class="col f-col">
-                    <h5 class="f-head">Crafter N6</h5>
-                    <ul class="f-list">
-                        <li><a href="#">Specifications</a></li>
-                        <li><a href="#">Bill of Materials (BOM)</a></li>
-                        <li><a href="#">Commercial Articles</a></li>
-                    </ul>
-                </div>
-
-                <div class="col f-col">
-                    <h5 class="f-head">Otros Artículos</h5>
-                    <ul class="f-list">
-                        <li><a href="#">3D Filaments</a></li>
-                        <li><a href="#">Accessories</a></li>
-                    </ul>
-                </div>
-
-                <div>
-
-                    <div class="col f-col">
-                        <h5 class="f-head">Frequently Asked Questions</h5>
-                        <ul class="f-list">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Contribute & Join Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="footermiddle">
-                <!-- Newsletter Section -->
-                <div class="newsletter-section">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <h3>Be the first to receive our latest product updates, newest offerings, and free product trials.</h3>
+                <div class="newsletter-formWrper">
                     <div class="newsletter-form">
                         <input type="email" placeholder="Enter your email address">
                         <button type="submit">Subscribe</button>
                     </div>
                 </div>
+            </div>
 
-                <!-- Payments block (right) -->
-                <div class="paymentwrper">
-                    <div class=" f-pay">
-                        <h6 class="f-pay-title">Payment Methods</h6>
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Crafter3D</h4>
+                    <p>
+                        Crafter3D es una comunidad dedicada a crear productos innovadores que apoyan y promueven el
+                        desarrollo de la impresión 3D.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+                    <h4>Crafter M6</h4>
+                    <ul>
+                        <li><a href="#">Especificaciones</a></li>
+                        <li><a href="#">BOM</a></li>
+                        <li><a href="#">Artículos Comerciales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Crafter N6</h4>
+                    <ul>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Bambu Lab Academy</a></li>
+                        <li><a href="#">Filament Guide</a></li>
+                        <li><a href="#">Official Wiki</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>Ayuda y Preguntas Frecuentes</h4>
+                    <ul>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Contribuye y Únete a Nosotros</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>Otros Articulos</h4>
+                    <ul>
+                        <li><a href="#">Filamentos 3D</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+
+                    <div class="paymentDivWrper">
                         <div class="f-pay-card">
                             <div class="f-powered">
-                                <img class="stripe-logo" src="./assest/footerPayment.png" alt="Stripe">
+                                <img class="stripe-logo" src="./assest/footerpayment.png" alt="Stripe">
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
-
-            <!-- ===== Bottom Row ===== -->
-            <div class="row f-bottom">
-                <div>
-                    <div class="col f-social">
-                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" aria-label="TikTok" class="tiktok"> <i class="fa-brands fa-youtube"></i></i></a>
-                    </div>
-
-                    <div class="col f-legal">
-                        <span>© 2025 Crafter3D</span>
-                        <span class="dot"> · </span>
-                        <a href="#">Privacy Policy</a>
-                        <span class="dot"> · </span>
-                        <a href="#">Terms & Conditions</a>
-                    </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-policies">
+                    <a href="#">Privacy Policy |</a>
+                    <a href="#">Terms of Use |</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
-
-                <div class="col f-topbtn">
-                    <a href="#top" class="f-up" title="Volver arriba">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
+                <div class="copyright">
+                    <p>Copyright © 2025 Crafter3D || All Rights Reserved</p>
                 </div>
             </div>
-
         </div>
+
+
+        <div class="bottomToTopBtnWrper">
+            <button id="backToTopBtn" class="bottomToTopBtn"> <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+
     </footer>
     <!-- footer section end from here -->
 
@@ -765,6 +737,7 @@
     <script src="./js/navber.js"></script>
     <script src="./js/faq.js"></script>
     <script src="./js/heroSlider.js"></script>
+    <script src="./js/bottomtoTop.js"></script>
 
 </body>
 

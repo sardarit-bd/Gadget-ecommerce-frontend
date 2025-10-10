@@ -55,12 +55,9 @@
 @media (max-width: 992px) {
     .learn-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 20px;
     }
 
-    .learn-grid {
-        gap: 40px;
-    }
 
     .learn-main-card {
         padding: 40px 30px;
@@ -86,7 +83,7 @@
 
     .learn-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 20px;
     }
 
     .learn-secondary-cards {
