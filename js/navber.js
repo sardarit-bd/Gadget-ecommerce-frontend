@@ -1,10 +1,30 @@
-
+const login_popUp = document.querySelector('.login_popUp');
+const smallscreen_user = document.querySelector('.smallscreen_user');
+const loginpopupcross = document.querySelector('.loginpopupcross');
+const user = document.querySelector('.user');
 let productsection = document.querySelector('.products-section');
 let megamenu = document.querySelector('.mega-menu');
 const navbar = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
 let navitem_product = document.querySelector('.navitem_product');
 const transparentDiv = document.querySelector('.transparentdiv');
+
+
+
+
+
+
+/************** login pop up show ***************/
+user.addEventListener('click', () => {
+    login_popUp.style.display = 'flex';
+});
+smallscreen_user.addEventListener('click', () => {
+    login_popUp.style.display = 'flex';
+});
+
+loginpopupcross.addEventListener('click', () => {
+    login_popUp.style.display = 'none';
+});
 
 
 
@@ -17,9 +37,9 @@ navbar.addEventListener("click", () => {
 
 
     if (navbar.classList.contains('showNavActive')) {
-        navbar.innerHTML = '✚';
+        navbar.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     } else {
-        navbar.innerHTML = "☰";
+        navbar.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 })
 

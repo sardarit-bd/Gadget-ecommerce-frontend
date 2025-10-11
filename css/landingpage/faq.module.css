@@ -209,7 +209,7 @@ img.faq-img {
     }
 
     .faq-question {
-        padding: 20px 0;
+        padding: 20px 10px;
     }
 
     .faq-question h3 {
@@ -232,6 +232,7 @@ img.faq-img {
     .faq-answer p {
         font-size: 0.95rem;
     }
+
 }
 
 /* Extra small devices (Phones under 480px) */
