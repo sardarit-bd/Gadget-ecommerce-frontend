@@ -605,7 +605,7 @@ img.product-img {
     border: none;
     border-radius: 4px;
     margin-top: 10px;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .link-row {
