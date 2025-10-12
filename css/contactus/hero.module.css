@@ -1,0 +1,21 @@
+/* Contact Hero */
+.contact-hero {
+    background: linear-gradient(135deg, #1A1A1A 0%, #333 100%);
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+}

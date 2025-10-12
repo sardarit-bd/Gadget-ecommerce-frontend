@@ -1,0 +1,83 @@
+/* Contact Methods */
+.contact-methods {
+    padding: 80px 0;
+    background: #F8F9FA;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.method-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-10px);
+}
+
+.method-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--branColor), var(--branColor));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: white;
+    font-size: 2rem;
+}
+
+.method-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1A1A1A;
+}
+
+.method-card p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.method-info {
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.info-item i {
+    color: var(--branColor);
+    width: 20px;
+}
+
+.method-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--branColor);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+}
+
+.method-btn:hover {
+    background: var(--branColor);
+    transform: translateY(-2px);
+}

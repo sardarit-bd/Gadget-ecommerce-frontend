@@ -442,6 +442,9 @@ img.product-img {
     display: block;
 }
 
+.fa-cart-shopping {
+    color: #fff;
+}
 
 .smallscreen_cartIconsWrper {
     transform: translateY(4px);

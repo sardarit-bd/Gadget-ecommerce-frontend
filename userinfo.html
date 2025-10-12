@@ -15,15 +15,9 @@
 
 
     <!-- css file link here -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/userinfo//userinfo.module.css">
     <link rel="stylesheet" href="./css/footer.module.css">
-    <link rel="stylesheet" href="./css/landingpage/HeroSlider.module.css">
-    <link rel="stylesheet" href="./css/landingpage/pawerfulltoll.module.css">
-    <link rel="stylesheet" href="./css/landingpage/whatyoucandosection.module.css">
-    <link rel="stylesheet" href="./css/landingpage/learn3dsection.module.css">
-    <link rel="stylesheet" href="./css/landingpage/vediosection.module.css">
-    <link rel="stylesheet" href="./css/landingpage/faq.module.css">
     <link rel="stylesheet" href="./css/header.module.css">
 </head>
 
@@ -235,7 +229,7 @@
 
                             </div>
                             <div class="smallscreen_cartIconsWrper">
-                                <img src="./assest/cart.png" alt="">
+                                <img src="./assest/cart.png" alt="cart-icon">
                                 <div class="smallscreen_cartNumber">
                                     0
                                 </div>
@@ -267,7 +261,7 @@
 
                         </div>
                         <div class="cartIconsWrper">
-                            <img src="./assest/cart.png" alt="">
+                            <img src="./assest/cart.png" alt="cart-icon">
                             <div class="cartNumber">
                                 0
                             </div>
@@ -294,375 +288,177 @@
 
 
 
-    <!-- hero slider section start from here  -->
-    <section class="carousel-section">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide"
-                    style="background-image: url('https://res.cloudinary.com/dmo0gctub/image/upload/v1759741474/crafted_3D/3d-1_e8xygx.jpg');text-align: left!important;">
-                    <div class="containersforswiper ">
-                        <div class="carousel-content">
-                            <div class="carousel-text">
-                                <h2>Crafter 3D X1C</h2>
-                                <h3>A Leap in 3D Printing the Flagship Core-XY 3D Printer</h3>
-                                <div class="buttons">
-                                    <a href="#" class="carousel-btn carousel-btn-primary">Buy now</a>
-                                    <a href="#" class="carousel-btn carousel-btn-secondary">Learn more</a>
+
+    <!-- ========== MAIN WRAPPER CONTAINER ========== -->
+
+    <main class="info-main">
+
+        <div class="container">
+            <section id="profile" class="info-section active">
+                <div class="section-header">
+                    <h1>Profile Information</h1>
+                    <p>Manage your personal details and how you appear on Crafter-3D</p>
+                </div>
+
+                <div class="profile-content">
+                    <!-- ================= AVATAR / PROFILE IMAGE ================= -->
+                    <div class="avatar-section">
+                        <div class="avatar-container">
+
+                            <!-- Avatar Image Preview -->
+                            <div class="avatar-preview">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80"
+                                    alt="Profile" class="avatar-image">
+                                <!-- Hover overlay with camera icon -->
+                                <div class="avatar-overlay">
+                                    <i class="fas fa-camera"></i>
                                 </div>
                             </div>
+
+                            <!-- Avatar Action Buttons -->
+                            <div class="avatar-actions">
+                                <button class="btn btn-secondary" id="changeAvatar">
+                                    <i class="fas fa-upload"></i>
+                                    Change Photo
+                                </button>
+                                <button class="btn btn-outline" id="removeAvatar">
+                                    <i class="fas fa-trash"></i>
+                                    Remove
+                                </button>
+                            </div>
+
+                            <!-- Avatar Image Guidelines -->
+                            <p class="avatar-help">
+                                Recommended: Square JPG, PNG, at least 400x400 pixels
+                            </p>
                         </div>
                     </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide"
-                    style="background-image: url('https://res.cloudinary.com/dmo0gctub/image/upload/v1759741465/crafted_3D/IMG_4267_dhtkuk.jpg')">
-                    <div class="containersforswiper">
-                        <div class="carousel-content">
-                            <div class="carousel-text">
-                                <h2>Advanced Technology</h2>
-                                <h3>Experience the future of 3D printing with cutting-edge features</h3>
-                                <div class="buttons">
-                                    <a href="#" class="carousel-btn carousel-btn-primary">Buy now</a>
-                                    <a href="#" class="carousel-btn carousel-btn-secondary">Learn more</a>
+
+                    <!-- ================= PERSONAL INFORMATION FORM ================= -->
+                    <form class="personal-form" id="personalForm">
+
+                        <!-- ===== Basic Information Section ===== -->
+                        <div class="form-section">
+                            <h3>Basic Information</h3>
+                            <div class="form-row">
+                                <!-- First Name -->
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" value="John" required>
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" value="Maker" required>
                                 </div>
                             </div>
+
+                            <!-- Username Field with Validation Icon -->
+                            <div class="form-group">
+                                <label for="username">Username *</label>
+                                <div class="input-with-check">
+                                    <input type="text" id="username" name="username" value="johnmaker" required>
+                                    <span class="check-icon success">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                                <p class="helper-text">This is your unique identifier on Crafter-3D</p>
+                            </div>
+
+                            <!-- Display Name -->
+                            <div class="form-group">
+                                <label for="displayName">Display Name</label>
+                                <input type="text" id="displayName" name="displayName" value="John The Maker">
+                                <p class="helper-text">This name will be visible to other users</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide"
-                    style="background-image: url('https://res.cloudinary.com/dmo0gctub/image/upload/v1759741459/crafted_3D/3d-2_obosam.jpg'); object-position: center">
-                    <div class="containersforswiper">
-                        <div class="carousel-content">
-                            <div class="carousel-text">
-                                <h2>Precision Engineering</h2>
-                                <h3>Unmatched accuracy and reliability for professional results</h3>
-                                <div class="buttons">
-                                    <a href="#" class="carousel-btn carousel-btn-primary">Buy now</a>
-                                    <a href="#" class="carousel-btn carousel-btn-secondary">Learn more</a>
+
+                        <!-- ===== Contact Information Section ===== -->
+                        <div class="form-section">
+                            <h3>Contact Information</h3>
+
+                            <!-- Email Field -->
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <div class="input-with-actions">
+                                    <input type="email" id="email" name="email" value="john.maker@example.com" required>
+                                    <div class="input-actions">
+                                        <!-- Verified Badge -->
+                                        <span class="verified-badge">
+                                            <i class="fas fa-check-circle"></i>
+                                            Verified
+                                        </span>
+                                        <!-- Change Email Button -->
+                                        <button type="button" class="btn-text" id="changeEmail">Change</button>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- Phone Field -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-with-actions">
+                                    <input type="tel" id="phone" name="phone" value="+1 (555) 123-4567">
+                                    <div class="input-actions">
+                                        <button type="button" class="btn-text" id="verifyPhone">Verify</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" value="San Francisco, CA">
+                            </div>
+
+                            <!-- Timezone Dropdown -->
+                            <div class="form-group">
+                                <label for="timezone">Timezone</label>
+                                <select id="timezone" name="timezone">
+                                    <option value="pst">Pacific Time (PT)</option>
+                                    <option value="est" selected>Eastern Time (ET)</option>
+                                    <option value="cst">Central Time (CT)</option>
+                                    <option value="mst">Mountain Time (MT)</option>
+                                    <option value="gmt">Greenwich Mean Time (GMT)</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+
+                        <!-- ===== About Me Section ===== -->
+                        <div class="form-section">
+                            <h3>About Me</h3>
+
+                            <!-- Bio Textarea with Character Counter -->
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" name="bio" rows="4">
+                                </textarea>
+                            </div>
+
+                            <!-- Personal Website -->
+                            <div class="form-group">
+                                <label for="website">Website</label>
+                                <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                            </div>
+                        </div>
+
+                        <!-- ===== FORM ACTION BUTTONS ===== -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="cancelChanges">Cancel</button>
+                            <button type="submit" class="btn btn-primary" id="saveChanges">
+                                <i class="fas fa-save"></i> Save Changes
+                            </button>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            </section>
         </div>
-    </section>
-    <!-- hero slider section end from here -->
+    </main>
 
 
 
 
-
-
-
-
-    <!-- powarful tool section start from here -->
-    <section class="tools-section">
-        <div class="">
-            <div class="tools-grid">
-                <!-- Tool 1 -->
-                <div class="tool-card">
-                    <div class="tool-container">
-                        <div class="tool-text">
-                            <span class="tool-tag">3D Printers</span>
-                            <h3>Powerful Tools for Makers</h3>
-                            <div class="tool-links">
-                                <a href="#" class="tool-link">Buy now <i class="fa-solid fa-caret-right"></i> </a>
-                                <a href="#" class="tool-link">Compare all <i class="fa-solid fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="tool-img">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Filamentos_bhrktn.png"
-                                alt="3D Printer">
-                        </div>
-                    </div>
-                </div>
-                <!-- Tool 2 -->
-                <div class="tool-card">
-                    <div class="tool-container">
-                        <div class="tool-text">
-                            <span class="tool-tag">Materials</span>
-                            <h3>High-Quality Filaments</h3>
-                            <div class="tool-links">
-                                <a href="#" class="tool-link">Shop filaments <i class="fa-solid fa-caret-right"></i></a>
-                                <a href="#" class="tool-link">Learn more <i class="fa-solid fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="tool-img">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816624/Montura_1_mxd3i5.png"
-                                alt="3D Printer">
-                        </div>
-                    </div>
-                </div>
-                <!-- Tool 3 -->
-                <div class="tool-card">
-                    <div class="tool-container">
-                        <div class="tool-text">
-                            <span class="tool-tag">Accessories</span>
-                            <h3>Enhance Your Printing Experience</h3>
-                            <div class="tool-links">
-                                <a href="#" class="tool-link">Explore tools <i class="fa-solid fa-caret-right"></i></a>
-                                <a href="#" class="tool-link">Find parts <i class="fa-solid fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="tool-img">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816623/Mecanismo_2_rshnba.png"
-                                alt="3D Printer">
-                        </div>
-                    </div>
-                </div>
-                <!-- Tool 4 -->
-                <div class="tool-card">
-                    <div class="tool-container">
-                        <div class="tool-text">
-                            <span class="tool-tag">Software</span>
-                            <h3>Smart Control for Seamless Printing</h3>
-                            <div class="tool-links">
-                                <a href="#" class="tool-link">Download <i class="fa-solid fa-caret-right"></i></a>
-                                <a href="#" class="tool-link">Discover features <i
-                                        class="fa-solid fa-caret-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="tool-img">
-                            <img src="https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png"
-                                alt="3D Printer">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- powarful tool section end from here -->
-
-
-
-
-
-    <!-- what you can do section start from here -->
-    <section class="uses-section">
-        <div class="uses-container">
-            <div class="section-header">
-                <h2>What You Can Do with 3D Printing</h2>
-            </div>
-            <div class="uses-grid">
-                <!-- Use Case 1 -->
-                <div class="use-card userCardOne">
-                    <div class="use-content">
-                        <div class="use-card-text-continer">
-                            <div>
-                                <h3>Art & Design</h3>
-                                <p>Turn imagination into reality with detailed artistic creations.</p>
-                            </div>
-                            <div class="img-continer">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Use Case 2 -->
-                <div class="use-card userCardTwo">
-                    <div class="use-content">
-                        <div class="use-card-text-continer">
-                            <div>
-                                <h3>Hobby & DIY</h3>
-                                <p>Enjoy your hobby more with custom parts and design!</p>
-                            </div>
-                            <div class="img-continer">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Use Case 3 -->
-                <div class="use-card userCardThree">
-                    <div class="use-content">
-                        <div class="use-card-text-continer">
-                            <div>
-                                <h3>Education & Learning</h3>
-                                <p>Make learning interactive with creative 3D-printed projects.</p>
-                            </div>
-                            <div class="img-continer">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Use Case 4 -->
-                <div class="use-card userCardFour">
-                    <div class="use-content">
-                        <div class="use-card-text-continer">
-                            <div>
-                                <h3>Prototyping & Engineering</h3>
-                                <p>Bring your innovative ideas to life with precision 3D printing.</p>
-                            </div>
-                            <div class="img-continer">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- what you can do section end from here -->
-
-
-
-
-    <!-- learn Learn 3D Printing Section start from here -->
-    <section class="learn-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>New to 3D Printing?<br />
-                    This Is the Place to Start</h2>
-            </div>
-            <div class="learn-grid">
-                <div class="learn-main-card"
-                    style="background-image: url('https://res.cloudinary.com/dmo0gctub/image/upload/v1759741481/crafted_3D/IMG_8110_j3f4b1.jpg');">
-                    <h3 class="learn-header-text">Learn 3D Printing Basics from Zero to Hero</h3>
-                    <a class="text-link" href="#">Learn more <i class="fa-solid fa-caret-right"></i></a>
-                </div>
-                <div class="learn-main-card"
-                    style="background-image: url('https://res.cloudinary.com/dmo0gctub/image/upload/v1759741488/crafted_3D/IMG_8107_vko5lh.jpg');">
-                    <h3 class="learn-header-text">Free Premium Models 3D Printing</h3>
-                    <a class="text-link" href="#">Learn more <i class="fa-solid fa-caret-right"></i></a>
-                </div>
-                <div class="learn-main-card"
-                    style="background-image: url('https://res.cloudinary.com/dmo0gctub/image/upload/v1759741478/crafted_3D/IMG_8111_bl8bfj.jpg');">
-                    <h3 class="learn-header-text">Choose the Correct Filaments for Your Projects</h3>
-                    <a class="text-link" href="#">Learn more <i class="fa-solid fa-caret-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- learn Learn 3D Printing Section end from here -->
-
-
-
-
-
-
-
-    <!-- vedio Section end from here -->
-    <section class="video-section">
-        <div class="section-header">
-            <h2>Check Out What the Pros Are Saying</h2>
-        </div>
-        <div class="container">
-            <div class="swiper video-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide video-card">
-                        <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            allowfullscreen></iframe>
-                        <p>Crafter 3d A1 Combo | 2024 Review</p>
-                    </div>
-                    <div class="swiper-slide video-card">
-                        <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            allowfullscreen></iframe>
-                        <p>Crafter 3d X1C | Speed at What Cost?</p>
-                    </div>
-                    <div class="swiper-slide video-card">
-                        <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            allowfullscreen></iframe>
-                        <p>The BEST 3D Printer I’ve Ever Used?</p>
-                    </div>
-                    <div class="swiper-slide video-card">
-                        <iframe src="https://www.youtube.com/embed/llj_1A1ausY?si=2ifrVHVglYEVvqVQ"
-                            allowfullscreen></iframe>
-                        <p>Top Gadgets Tested on Bambu Lab Printer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- vedio Section end from here -->
-
-
-
-
-
-
-
-
-    <!-- faq section start from here -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently asked questions</h2>
-            </div>
-            <div class="container">
-                <div class="faq-wraper">
-                    <div class="faq-wraper-img">
-                        <img class="faq-img" src="https://cdn1.bambulab.com/home/blog/5.jpeg" alt="FAQ Image">
-                    </div>
-                    <div class="faq-insid-continer">
-                        <div class="faq-item" data-img="https://cdn1.bambulab.com/home/blog/5.jpeg">
-                            <div class="faq-question">
-                                <h3>What's the best thing about Switzerland?</h3>
-                                <span class="faq-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>I don't know, but the flag is a big plus.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item" data-img="https://cdn1.bambulab.com/home/blog/us/2.jpg">
-                            <div class="faq-question">
-                                <h3>How do you make holy water?</h3>
-                                <span class="faq-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>You boil the hell out of it.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item" data-img="https://cdn1.bambulab.com/home/blog/us/3.jpg">
-                            <div class="faq-question">
-                                <h3>What do you call someone with no body and no nose?</h3>
-                                <span class="faq-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Nobody knows.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item" data-img="https://cdn1.bambulab.com/home/blog/us/4.jpg">
-                            <div class="faq-question">
-                                <h3>What do you call someone with no body and no nose?</h3>
-                                <span class="faq-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Nobody knows.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item" data-img="https://cdn1.bambulab.com/home/blog/us/3.jpg">
-                            <div class="faq-question">
-                                <h3>What do you call someone with no body and no nose?</h3>
-                                <span class="faq-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <div class="faq-answer">
-                                <p>Nobody knows.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq section end from here -->
 
 
 
@@ -733,7 +529,7 @@
                     <div class="paymentDivWrper">
                         <div class="f-pay-card">
                             <div class="f-powered">
-                                <img class="stripe-logo" src="./assest/footerpayment.png" alt="Stripe">
+                                <img class="stripe-logo" src="./assest/footerPayment.png" alt="Stripe">
                             </div>
                         </div>
                     </div>
@@ -762,14 +558,6 @@
 
     </footer>
     <!-- footer section end from here -->
-
-
-
-
-
-
-
-
 
 
 
@@ -849,12 +637,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/learnsection.js"></script>
-    <script src="./js/loadingpageVediosection.js"></script>
     <script src="./js/navber.js"></script>
-    <script src="./js/faq.js"></script>
-    <script src="./js/heroSlider.js"></script>
     <script src="./js/bottomtoTop.js"></script>
 
 </body>
