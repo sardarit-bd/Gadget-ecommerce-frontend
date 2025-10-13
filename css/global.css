@@ -60,3 +60,9 @@ body {
 .section-header h2 {
     font-size: 30px;
 }
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}

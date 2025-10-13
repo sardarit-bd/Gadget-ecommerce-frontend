@@ -1,4 +1,4 @@
-// Quantity Selector
+
 const quantityInput = document.getElementById('quantity');
 const decreaseBtn = document.getElementById('decreaseQty');
 const increaseBtn = document.getElementById('increaseQty');
@@ -35,29 +35,6 @@ tabBtns.forEach(btn => {
     });
 });
 
-// Color Options
-const colorOptions = document.querySelectorAll('.color-option');
-
-colorOptions.forEach(option => {
-    option.addEventListener('click', function () {
-        colorOptions.forEach(o => o.classList.remove('active'));
-        this.classList.add('active');
-
-        // Update product image based on color selection
-        const color = this.getAttribute('data-color');
-        updateProductImage(color);
-    });
-});
-
-function updateProductImage(color) {
-    // In a real application, you would fetch different images based on color
-    // For this demo, we'll just change the main image slightly
-    if (color === 'silver') {
-        mainImage.style.filter = 'brightness(1.2) contrast(0.9)';
-    } else {
-        mainImage.style.filter = 'none';
-    }
-}
 
 // Add to Cart Functionality
 const addToCartBtn = document.querySelector('.add-to-cart');
@@ -109,27 +86,6 @@ function showAddToCartConfirmation(quantity, amsChecked, color) {
     }, 3000);
 }
 
-// Wishlist Functionality
-const wishlistBtn = document.querySelector('.wishlist-btn');
-let isInWishlist = false;
-
-wishlistBtn.addEventListener('click', function () {
-    isInWishlist = !isInWishlist;
-
-    if (isInWishlist) {
-        this.innerHTML = '<i class="fas fa-heart"></i>';
-        this.style.color = '#e74c3c';
-
-        // Show wishlist notification
-        showWishlistNotification('added');
-    } else {
-        this.innerHTML = '<i class="far fa-heart"></i>';
-        this.style.color = '';
-
-        // Show wishlist notification
-        showWishlistNotification('removed');
-    }
-});
 
 function showWishlistNotification(action) {
     const message = action === 'added' ? 'Added to wishlist!' : 'Removed from wishlist!';
@@ -173,14 +129,6 @@ loadMoreReviewsBtn.addEventListener('click', function () {
     alert('Loading more reviews... This would fetch additional reviews in a real application.');
 });
 
-// Mobile Menu Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-hamburger.addEventListener('click', function () {
-    this.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
 
 // Update price when AMS is selected
 const amsCheckbox = document.getElementById('amsSystem');
@@ -213,4 +161,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const mainImage = document.getElementById("mainImage");
+    const thumbs = document.querySelectorAll(".gallery-thumbs .thumb");
+
+
+    console.log(thumbs);
+
+
+    thumbs.forEach((thumb) => {
+        thumb.addEventListener("click", function () {
+            // Get the image URL from data attribute
+            const newSrc = this.getAttribute("data-image");
+
+
+            console.log(newSrc);
+
+
+            // Update main image
+            mainImage.src = newSrc;
+
+            // Update active class
+            thumbs.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
 });
+
+
+
+
+
+
+

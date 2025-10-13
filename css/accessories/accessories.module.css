@@ -1,0 +1,20 @@
+.accessoriesBodySection {
+    height: 60vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.developmentWrper {
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.developmentWrper>h3 {
+    font-size: 25px;
+}
