@@ -633,6 +633,7 @@
     border-radius: 20px 20px 0 0;
     background: rgba(255, 255, 255, 0.1);
     justify-content: center;
+    padding-top: 20px;
 }
 
 .productpage_product_image img {
@@ -1326,6 +1327,20 @@
     max-height: 70vh;
     overflow-y: auto;
 }
+
+
+
+
+@media (max-width:998px) {
+    .productpage_product_filter {
+        display: none;
+    }
+
+    .productpage_products_card_section {
+        padding-top: 100px;
+    }
+}
+
 
 /* Page-level responsive helpers */
 @media (max-width: 1200px) {

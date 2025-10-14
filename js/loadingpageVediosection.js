@@ -13,6 +13,10 @@ const videoSwiper = new Swiper(".video-swiper", {
         delay: 3000,
         disableOnInteraction: false,
     },
+    navigation: {
+        nextEl: ".landing_arrow_right",
+        prevEl: ".landing_arrow_left",
+    },
     breakpoints: {
         320: { slidesPerView: 1.1 },
         576: { slidesPerView: 1.5 },

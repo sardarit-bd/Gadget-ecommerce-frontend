@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true
         },
         navigation: {
-            nextEl: '.productpage_swiper_button_next',
-            prevEl: '.productpage_swiper_button_prev'
+            nextEl: ".landing_arrow_right",
+            prevEl: ".landing_arrow_left",
         },
         keyboard: { enabled: true, onlyInViewport: true },
         grabCursor: true,

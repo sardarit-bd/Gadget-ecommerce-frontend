@@ -215,7 +215,6 @@
     padding: 20px;
     color: #2c3e50;
     font-size: 14px;
-    margin-bottom: 20px;
 }
 
 .mega-product-header {
@@ -699,6 +698,16 @@ img.product-img {
         border-radius: 8px;
         width: 260px;
     }
+
+
+    .mega-product-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ecf0f1;
+        text-align: left;
+    }
 }
 
 
@@ -806,14 +815,7 @@ img.product-img {
         gap: 20px;
     }
 
-    .mega-product-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 12px;
-        border-bottom: 1px solid #ecf0f1;
-        text-align: left;
-    }
+
 
 
 

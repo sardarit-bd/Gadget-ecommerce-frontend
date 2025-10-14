@@ -72,6 +72,7 @@
 .video-swiper {
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .swiper-slide.video-card {
@@ -79,11 +80,14 @@
 }
 
 
+
 /* Responsive */
 @media (max-width: 992px) {
     .video-card {
         min-width: 260px;
     }
+
+
 }
 
 @media (max-width: 576px) {

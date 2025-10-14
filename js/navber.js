@@ -16,12 +16,15 @@ const transparentDiv = document.querySelector('.transparentdiv');
 
 /************** login pop up show ***************/
 user.addEventListener('click', () => {
-    window.location.href = 'login.html';
+    login_popUp.style.display = 'flex';
 });
 smallscreen_user.addEventListener('click', () => {
-    window.location.href = 'login.html';
+    login_popUp.style.display = 'flex';
 });
 
+loginpopupcross.addEventListener('click', () => {
+    login_popUp.style.display = 'none';
+});
 
 
 

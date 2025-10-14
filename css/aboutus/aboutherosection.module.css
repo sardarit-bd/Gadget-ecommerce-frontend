@@ -62,3 +62,11 @@
     color: #666;
     font-size: 1.2rem;
 }
+
+
+
+@media (max-width:768px) {
+    .stat-number {
+        font-size: 1.7rem;
+    }
+}
