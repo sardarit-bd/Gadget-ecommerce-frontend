@@ -15,10 +15,11 @@
 
 
     <!-- css file link here -->
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/userinfo//userinfo.module.css">
-    <link rel="stylesheet" href="./css/footer.module.css">
-    <link rel="stylesheet" href="./css/header.module.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/footer.module.css">
+    <link rel="stylesheet" href="../css/header.module.css">
+    <link rel="stylesheet" href="./css/login/login.module.css">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
                 <div class="nav-wrapper">
                     <div>
                         <a href="/">
-                            <img class="logo-img" src="./assest/logo.png" alt="Logo">
+                            <img class="logo-img" src="../assest/logo.png" alt="Logo">
                         </a>
                     </div>
 
@@ -226,7 +227,7 @@
 
                             </div>
                             <div class="smallscreen_cartIconsWrper">
-                                <img src="./assest/cart.png" alt="cart-icon">
+                                <img src="../assest/cart.png" alt="cart-icon">
                                 <div class="smallscreen_cartNumber">
                                     0
                                 </div>
@@ -258,7 +259,7 @@
 
                         </div>
                         <div class="cartIconsWrper">
-                            <img src="./assest/cart.png" alt="cart-icon">
+                            <img src="../assest/cart.png" alt="cart-icon">
                             <div class="cartNumber">
                                 0
                             </div>
@@ -283,180 +284,66 @@
 
 
 
+    <section class="loginBodySection">
 
 
+        <div class="loginPagebox">
+            <div class="loginpopupbox">
+                <div class="login-container">
+                    <h2 class="brand-title">Crafter 3D Account</h2>
 
-    <!-- ========== MAIN WRAPPER CONTAINER ========== -->
+                    <div class="login-card">
+                        <h3 class="login-title">Log In</h3>
 
-    <main class="info-main">
-
-        <div class="container">
-            <section id="profile" class="info-section active">
-                <div class="section-header">
-                    <h1>Profile Information</h1>
-                    <p>Manage your personal details and how you appear on Crafter-3D</p>
-                </div>
-
-                <div class="profile-content">
-                    <!-- ================= AVATAR / PROFILE IMAGE ================= -->
-                    <div class="avatar-section">
-                        <div class="avatar-container">
-
-                            <!-- Avatar Image Preview -->
-                            <div class="avatar-preview">
-                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80"
-                                    alt="Profile" class="avatar-image">
-                                <!-- Hover overlay with camera icon -->
-                                <div class="avatar-overlay">
-                                    <i class="fas fa-camera"></i>
-                                </div>
-                            </div>
-
-                            <!-- Avatar Action Buttons -->
-                            <div class="avatar-actions">
-                                <button class="btn btn-secondary" id="changeAvatar">
-                                    <i class="fas fa-upload"></i>
-                                    Change Photo
-                                </button>
-                                <button class="btn btn-outline" id="removeAvatar">
-                                    <i class="fas fa-trash"></i>
-                                    Remove
-                                </button>
-                            </div>
-
-                            <!-- Avatar Image Guidelines -->
-                            <p class="avatar-help">
-                                Recommended: Square JPG, PNG, at least 400x400 pixels
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- ================= PERSONAL INFORMATION FORM ================= -->
-                    <form class="personal-form" id="personalForm">
-
-                        <!-- ===== Basic Information Section ===== -->
-                        <div class="form-section">
-                            <h3>Basic Information</h3>
-                            <div class="form-row">
-                                <!-- First Name -->
-                                <div class="form-group">
-                                    <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" value="John" required>
-                                </div>
-
-                                <!-- Last Name -->
-                                <div class="form-group">
-                                    <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" value="Maker" required>
-                                </div>
-                            </div>
-
-                            <!-- Username Field with Validation Icon -->
+                        <form>
                             <div class="form-group">
-                                <label for="username">Username *</label>
-                                <div class="input-with-check">
-                                    <input type="text" id="username" name="username" value="johnmaker" required>
-                                    <span class="check-icon success">
-                                        <i class="fas fa-check"></i>
-                                    </span>
-                                </div>
-                                <p class="helper-text">This is your unique identifier on Crafter-3D</p>
+                                <label>Email Address*</label>
+                                <input type="email" placeholder="Enter your email" required>
                             </div>
 
-                            <!-- Display Name -->
-                            <div class="form-group">
-                                <label for="displayName">Display Name</label>
-                                <input type="text" id="displayName" name="displayName" value="John The Maker">
-                                <p class="helper-text">This name will be visible to other users</p>
+                            <div class="form-group password-group">
+                                <label>Password*</label>
+                                <input type="password" placeholder="Enter your password" required>
+                                <!-- <span class="eye-icon">👁</span> -->
                             </div>
+
+                            <button type="submit" class="login-btn" disabled>Log In</button>
+
+                            <div class="link-row">
+                                <a href="./ragister.html" class="create-account">Create Your Account</a>
+                                <a href="./forgot.html" class="forgot">Forgot</a>
+                            </div>
+
+                            <div class="checkbox-row">
+                                <input type="checkbox" id="terms" checked>
+                                <label for="terms">
+                                    I agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                                </label>
+                            </div>
+                        </form>
+
+                        <div class="divider">
+                            <span>Login with other accounts</span>
                         </div>
 
-                        <!-- ===== Contact Information Section ===== -->
-                        <div class="form-section">
-                            <h3>Contact Information</h3>
-
-                            <!-- Email Field -->
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <div class="input-with-actions">
-                                    <input type="email" id="email" name="email" value="john.maker@example.com" required>
-                                    <div class="input-actions">
-                                        <!-- Verified Badge -->
-                                        <span class="verified-badge">
-                                            <i class="fas fa-check-circle"></i>
-                                            Verified
-                                        </span>
-                                        <!-- Change Email Button -->
-                                        <button type="button" class="btn-text" id="changeEmail">Change</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Phone Field -->
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <div class="input-with-actions">
-                                    <input type="tel" id="phone" name="phone" value="+1 (555) 123-4567">
-                                    <div class="input-actions">
-                                        <button type="button" class="btn-text" id="verifyPhone">Verify</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Location -->
-                            <div class="form-group">
-                                <label for="location">Location</label>
-                                <input type="text" id="location" name="location" value="San Francisco, CA">
-                            </div>
-
-                            <!-- Timezone Dropdown -->
-                            <div class="form-group">
-                                <label for="timezone">Timezone</label>
-                                <select id="timezone" name="timezone">
-                                    <option value="pst">Pacific Time (PT)</option>
-                                    <option value="est" selected>Eastern Time (ET)</option>
-                                    <option value="cst">Central Time (CT)</option>
-                                    <option value="mst">Mountain Time (MT)</option>
-                                    <option value="gmt">Greenwich Mean Time (GMT)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- ===== About Me Section ===== -->
-                        <div class="form-section">
-                            <h3>About Me</h3>
-
-                            <!-- Bio Textarea with Character Counter -->
-                            <div class="form-group">
-                                <label for="bio">Bio</label>
-                                <textarea id="bio" name="bio" rows="4">
-                                </textarea>
-                            </div>
-
-                            <!-- Personal Website -->
-                            <div class="form-group">
-                                <label for="website">Website</label>
-                                <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
-                            </div>
-                        </div>
-
-                        <!-- ===== FORM ACTION BUTTONS ===== -->
-                        <div class="form-actions">
-                            <button type="button" class="btn btn-secondary" id="cancelChanges">Cancel</button>
-                            <button type="submit" class="btn btn-primary" id="saveChanges">
-                                <i class="fas fa-save"></i> Save Changes
+                        <div class="social-login">
+                            <button class="social-btn google">
+                                <i class="fa-brands fa-google"></i>
+                            </button>
+                            <button class="social-btn facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </button>
+                            <button class="social-btn apple">
+                                <i class="fa-brands fa-apple"></i>
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </main>
 
 
-
-
-
+    </section>
 
 
 
@@ -526,7 +413,7 @@
                     <div class="paymentDivWrper">
                         <div class="f-pay-card">
                             <div class="f-powered">
-                                <img class="stripe-logo" src="./assest/footerPayment.png" alt="Stripe">
+                                <img class="stripe-logo" src="../assest/footerpayment.png" alt="Stripe">
                             </div>
                         </div>
                     </div>
@@ -562,66 +449,6 @@
 
 
 
-    <!-- here popup and model html code start from here -->
-    <div class="login_popUp">
-        <div class="loginpopupbox">
-            <div class="loginpopupcross">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="login-container">
-                <h2 class="brand-title">Crafter 3D Account</h2>
-
-                <div class="login-card">
-                    <h3 class="login-title">Log In</h3>
-
-                    <form>
-                        <div class="form-group">
-                            <label>Email Address*</label>
-                            <input type="email" placeholder="Enter your email" required>
-                        </div>
-
-                        <div class="form-group password-group">
-                            <label>Password*</label>
-                            <input type="password" placeholder="Enter your password" required>
-                            <!-- <span class="eye-icon">👁</span> -->
-                        </div>
-
-                        <button type="submit" class="login-btn" disabled>Log In</button>
-
-                        <div class="link-row">
-                            <a href="./ragister.html" class="create-account">Create Your Account</a>
-                            <a href="./forgot.html" class="forgot">Forgot</a>
-                        </div>
-
-                        <div class="checkbox-row">
-                            <input type="checkbox" id="terms" checked>
-                            <label for="terms">
-                                I agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                            </label>
-                        </div>
-                    </form>
-
-                    <div class="divider">
-                        <span>Login with other accounts</span>
-                    </div>
-
-                    <div class="social-login">
-                        <button class="social-btn google">
-                            <i class="fa-brands fa-google"></i>
-                        </button>
-                        <button class="social-btn facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </button>
-                        <button class="social-btn apple">
-                            <i class="fa-brands fa-apple"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- here popup and model html code dnd from here -->
 
 
 
@@ -632,10 +459,8 @@
 
 
 
-
-
-    <script src="./js/navber.js"></script>
-    <script src="./js/bottomtoTop.js"></script>
+    <script src="../js/navber.js"></script>
+    <script src="../js/bottomtoTop.js"></script>
 
 </body>
 

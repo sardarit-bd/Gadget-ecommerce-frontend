@@ -1,0 +1,17 @@
+.ragisterBodySection {
+    height: fit-content;
+    width: 100vw;
+    padding: 90px 0;
+    padding-top: 140px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+}
+
+.ragisterPagebox {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
