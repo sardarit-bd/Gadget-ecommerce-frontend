@@ -206,8 +206,8 @@ select:focus {
 
 /* Special Buttons */
 .btn-paypal {
-    background-color: #0070ba;
-    color: white;
+    background-color: var(--branColor);
+    color: white !important;
     width: 100%;
 }
 
@@ -216,13 +216,13 @@ select:focus {
 }
 
 .btn-applepay {
-    background-color: #000;
-    color: white;
+    background-color: var(--branColor);
+    color: white !important;
     width: 100%;
 }
 
 .btn-applepay:hover {
-    background-color: #333;
+    background-color: #005ea6;
 }
 
 /* Billing Address */
@@ -232,17 +232,24 @@ select:focus {
 }
 
 .checkbox-group {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
     gap: 10px;
 }
 
 .checkbox-group input {
-    width: auto;
+
+    width: 25px;
+    height: 25px;
+}
+
+.llll {
+    margin-top: 27px;
 }
 
 .checkbox-group label {
-    margin-bottom: 0;
+    padding-top: 5px;
     font-weight: normal;
 }
 

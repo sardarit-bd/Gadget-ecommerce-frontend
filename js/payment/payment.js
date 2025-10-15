@@ -412,7 +412,7 @@ class PaymentPage {
     }
 
     continueShopping() {
-        window.location.href = 'products.html';
+        window.location.href = 'product.html';
     }
 
     viewOrderDetails() {

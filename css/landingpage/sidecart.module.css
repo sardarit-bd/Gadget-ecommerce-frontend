@@ -71,7 +71,8 @@
     overflow: auto;
     flex: 1;
     margin-top: 20px;
-    max-width: 70vh;
+    max-height: 70vh;
+    overflow-y: scroll !important;
 }
 
 .sc-item {
@@ -231,5 +232,12 @@
 @media (max-width:420px) {
     .sc-actions {
         flex-direction: column;
+    }
+}
+
+
+@media (max-width:768px) {
+    .sc-body {
+        max-height: 60vh;
     }
 }
