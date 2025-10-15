@@ -15,6 +15,19 @@
     margin-bottom: 15px;
     padding: 30px;
     border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery_main_zoom {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
+.fa-magnifying-glass-plus {
+    color: var(--branColor);
+    font-size: 25px;
 }
 
 .gallery-main img {
@@ -99,6 +112,10 @@
 
 .product-price {
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .current-price {
@@ -546,6 +563,167 @@
 }
 
 
+
+
+
+
+
+
+
+/* product bigger popup css code here */
+.product_bigger_popUp {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.549);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_bigger_popUp_container {
+    position: relative;
+    background: #fff;
+    border-radius: 10px !important;
+    width: 80vw;
+    max-width: 1000px;
+    min-height: 600px;
+    max-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/* .product_bigger_popUp_Controller_wrper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.product_bigger_popUp_Counter {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    background: var(--branColor);
+    border: 1px solid #fff;
+    width: 40px;
+    height: 30px;
+    z-index: 999;
+    color: #fff;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.product_bigger_popUp_cross {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--branColor);
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.product_bigger_popUp_cross:hover {
+    transform: rotate(180deg);
+}
+
+
+.product_bigger_popUp_PrevBtn {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    background: var(--branColor);
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.product_bigger_popUp_PrevBtn:hover {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.product_bigger_popUp_nextBtn {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    background: var(--branColor);
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.product_bigger_popUp_nextBtn:hover {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+.product_bigger_popUp_body_Left_right_wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.product_bigger_popUp_body_wraper {
+    padding: 50px;
+}
+
+
+
+.pop_up_image {
+    width: 500px;
+}
+
+
 /* Responsive Design */
 @media (max-width: 992px) {
 
@@ -620,6 +798,11 @@
     .footer-content {
         grid-template-columns: 1fr;
     }
+
+    .pop_up_image {
+        width: 300px;
+    }
+
 }
 
 @media (max-width: 576px) {

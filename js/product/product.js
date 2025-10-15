@@ -173,3 +173,30 @@ document.addEventListener('DOMContentLoaded', function () {
     // keep a reference to avoid duplicate inits later (optional)
     container._swiper = swiper;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// small screen filter show 
+const downIconsArrowWrper = document.querySelector('.downIconsArrowWrper');
+const productpage_filter_container = document.querySelector('.productpage_filter_container');
+
+downIconsArrowWrper.addEventListener('click', () => {
+    productpage_filter_container.classList.toggle('filtershowactive');
+
+    if (productpage_filter_container.classList.contains('filtershowactive')) {
+        downIconsArrowWrper.style.transform = 'rotate(270deg)';
+    } else {
+        downIconsArrowWrper.style.transform = 'rotate(90deg)';
+
+    }
+});

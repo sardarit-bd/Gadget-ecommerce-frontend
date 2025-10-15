@@ -382,9 +382,8 @@
 /* Product Filter */
 .productpage_product_filter {
     background: #f8f9fa;
-    padding: 30px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #e9ecef;
-
     position: sticky;
     top: 60.5px;
     z-index: 100;
@@ -407,6 +406,7 @@
 .productpage_filter_group label {
     font-weight: 600;
     color: #333;
+    text-wrap: nowrap;
 }
 
 .productpage_filter_options {
@@ -453,12 +453,7 @@
     font-size: 0.95rem;
     color: #333;
     outline: none;
-}
-
-.productpage_product_filter {
-    background: #f9fafc;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    border-radius: 20px;
 }
 
 .productpage_filter_container {
@@ -906,6 +901,8 @@
 
 /* Responsive adjustments (cards) */
 @media (max-width: 768px) {
+
+
     .productpage_products_grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1329,15 +1326,89 @@
 }
 
 
+.small_screen_filterBy {
+    display: none;
+}
+
 
 
 @media (max-width:998px) {
+
+
     .productpage_product_filter {
+        padding: 15px 0;
+    }
+
+    .productpage_filter_group {
+        margin-top: 20px;
+    }
+
+    .productpage_filter_btn {
+        padding: 10px 10px;
+    }
+
+    .productpage_sort_group {
+        width: 100%;
+    }
+
+    .productpage_search_group {
+        width: 100%;
+    }
+
+    .productpage_search_box {
+        width: 100%;
+    }
+
+    .productpage_sort_group label {
         display: none;
     }
 
+    .productpage_sort_select {
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px 10px;
+    }
+
+    .productpage_filter_group label {
+        display: none;
+    }
+
+    .productpage_filter_title_forfilter {
+        font-size: 18px;
+    }
+
+    .small_screen_filterBy {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .downIconsArrowWrper {
+        transform: rotate(90deg);
+        border: 1px solid #e9ecef;
+        background: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .productpage_filter_container {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filtershowactive {
+        display: flex !important;
+    }
+
+
     .productpage_products_card_section {
-        padding-top: 100px;
+        padding-top: 90px;
     }
 }
 
@@ -1370,10 +1441,6 @@
         font-size: 2.5rem;
     }
 
-    .productpage_filter_container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     .productpage_products_grid {
         grid-template-columns: 1fr;

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/footer.module.css">
     <link rel="stylesheet" href="../css/header.module.css">
     <link rel="stylesheet" href="./css/contactus/hero.module.css">
+    <link rel="stylesheet" href="./css/landingpage/sidecart.module.css">
     <link rel="stylesheet" href="./css/contactus/contactmethod.module.css">
     <link rel="stylesheet" href="./css/contactus/contactformsection.module.css">
 </head>
@@ -575,6 +576,141 @@
 
 
 
+    <!-- side cart pop up code start from here -->
+    <div class="sidecart_popup">
+        <div class="sideTransparentSpace">
+
+        </div>
+        <div class="sidecartWrper">
+            <div class="headingandcrossbtnWrper">
+                <h3>Shopping Cart</h3>
+                <div class="crossbtnWrper">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div>
+
+                <div class="sc-body">
+
+                    <!-- Item -->
+                    <div class="sc-item" data-id="sku-1">
+                        <img src="https://picsum.photos/seed/p1/80/80" alt="Product image">
+                        <div class="sc-item-info">
+                            <div class="sc-item-top">
+                                <p class="sc-item-name">Crafter-3D X1C</p>
+                                <button class="sc-remove" data-sc-remove>Remove</button>
+                            </div>
+
+                            <div class="sc-row">
+                                <div class="sc-qty">
+                                    <button class="sc-qty-btn" data-sc-dec aria-label="Decrease">−</button>
+                                    <input class="sc-qty-input" type="number" min="1" value="1" inputmode="numeric">
+                                    <button class="sc-qty-btn" data-sc-inc aria-label="Increase">+</button>
+                                </div>
+                                <div class="sc-price" data-sc-price="24.99">$24.99</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="sc-item" data-id="sku-2">
+                        <img src="https://picsum.photos/seed/p2/80/80" alt="Product image">
+                        <div class="sc-item-info">
+                            <div class="sc-item-top">
+                                <p class="sc-item-name">PLA Filament 1kg</p>
+                                <button class="sc-remove" data-sc-remove>Remove</button>
+                            </div>
+
+
+                            <div class="sc-row">
+                                <div class="sc-qty">
+                                    <button class="sc-qty-btn" data-sc-dec aria-label="Decrease">−</button>
+                                    <input class="sc-qty-input" type="number" min="1" value="2" inputmode="numeric">
+                                    <button class="sc-qty-btn" data-sc-inc aria-label="Increase">+</button>
+                                </div>
+                                <div class="sc-price" data-sc-price="19.50">$19.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Item -->
+                    <div class="sc-item" data-id="sku-2">
+                        <img src="https://picsum.photos/seed/p2/80/80" alt="Product image">
+                        <div class="sc-item-info">
+                            <div class="sc-item-top">
+                                <p class="sc-item-name">PLA Filament 1kg</p>
+                                <button class="sc-remove" data-sc-remove>Remove</button>
+                            </div>
+
+
+                            <div class="sc-row">
+                                <div class="sc-qty">
+                                    <button class="sc-qty-btn" data-sc-dec aria-label="Decrease">−</button>
+                                    <input class="sc-qty-input" type="number" min="1" value="2" inputmode="numeric">
+                                    <button class="sc-qty-btn" data-sc-inc aria-label="Increase">+</button>
+                                </div>
+                                <div class="sc-price" data-sc-price="19.50">$19.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Item -->
+                    <div class="sc-item" data-id="sku-2">
+                        <img src="https://picsum.photos/seed/p2/80/80" alt="Product image">
+                        <div class="sc-item-info">
+                            <div class="sc-item-top">
+                                <p class="sc-item-name">PLA Filament 1kg</p>
+                                <button class="sc-remove" data-sc-remove>Remove</button>
+                            </div>
+
+
+                            <div class="sc-row">
+                                <div class="sc-qty">
+                                    <button class="sc-qty-btn" data-sc-dec aria-label="Decrease">−</button>
+                                    <input class="sc-qty-input" type="number" min="1" value="2" inputmode="numeric">
+                                    <button class="sc-qty-btn" data-sc-inc aria-label="Increase">+</button>
+                                </div>
+                                <div class="sc-price" data-sc-price="19.50">$19.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="sc-footer">
+                    <div class="sc-summary">
+                        <div class="sc-line"><span>Subtotal</span><strong data-sc-subtotal>$83.00</strong></div>
+                        <div class="sc-line sc-muted"><span>Shipping</span><span>Calculated at checkout</span></div>
+                        <div class="sc-line sc-total"><span>Total</span><strong data-sc-total>$83.00</strong></div>
+                    </div>
+
+                    <div class="sc-actions">
+                        <a href="./cart.html" class="sc-viewcart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </a>
+                        <a href="./payment.html" class="sc-checkout">Checkout</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- side cart pop up code end from here -->
+
+
+
+
+
+
 
 
 
@@ -582,6 +718,7 @@
 
 
     <script src="../js/navber.js"></script>
+    <script src="./js/sidecart.js"></script>
     <script src="../js/bottomtoTop.js"></script>
 
 </body>

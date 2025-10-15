@@ -175,9 +175,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const thumbs = document.querySelectorAll(".gallery-thumbs .thumb");
 
 
-    console.log(thumbs);
-
-
     thumbs.forEach((thumb) => {
         thumb.addEventListener("click", function () {
             // Get the image URL from data attribute
@@ -200,6 +197,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+
+
+
+const product_bigger_popUp_cross = document.querySelector('.product_bigger_popUp_cross');
+const product_bigger_popUp = document.querySelector('.product_bigger_popUp');
+const gallery_main = document.querySelector('.gallery-main');
+const pop_up_image = document.querySelector('.pop_up_image');
+
+product_bigger_popUp_cross.addEventListener('click', function () {
+    product_bigger_popUp.style.display = 'none';
+});
+
+
+gallery_main.addEventListener('click', function () {
+    product_bigger_popUp.style.display = 'flex';
+});
+
+
+const imagearr = [
+    'https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816626/Pieza_1_iyirod.png',
+    'https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816625/Filamentos_bhrktn.png',
+    'https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816624/Montura_1_mxd3i5.png',
+    'https://res.cloudinary.com/dfq6dppjb/image/upload/v1759816618/M%C3%A1quina_2_rwjyh8.png'
+
+];
+const imageLength = imagearr.length;
+let currentIndex = 0;
+
+
+const product_bigger_popUp_nextBtn = document.querySelector('.product_bigger_popUp_nextBtn');
+const product_bigger_popUp_PrevBtn = document.querySelector('.product_bigger_popUp_PrevBtn');
+const popUpLength = document.querySelector('.popUpLength');
+const popupCurrentLength = document.querySelector('.popupCurrentLength');
+
+popUpLength.textContent = imageLength;
+popupCurrentLength.textContent = currentIndex + 1;
+
+product_bigger_popUp_nextBtn.addEventListener('click', function () {
+
+    if (currentIndex < imageLength - 1) {
+        currentIndex++;
+        popupCurrentLength.textContent = currentIndex + 1;
+        pop_up_image.src = imagearr[currentIndex];
+    }
+
+
+});
+
+product_bigger_popUp_PrevBtn.addEventListener('click', function () {
+
+    if (currentIndex > 0) {
+        currentIndex--;
+        popupCurrentLength.textContent = currentIndex + 1;
+        pop_up_image.src = imagearr[currentIndex];
+    }
+
+});
 
 
 

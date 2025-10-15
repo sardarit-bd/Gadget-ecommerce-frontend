@@ -10,7 +10,7 @@ const Customize = document.getElementById('Customize');
 // dom content loaded
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-        cookie_popup.style.display = 'none';
+        cookie_popup.style.display = 'flex';
     }, 2000);
 });
 

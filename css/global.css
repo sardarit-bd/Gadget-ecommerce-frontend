@@ -109,6 +109,11 @@ body {
 }
 
 
+input[type="checkbox"] {
+    accent-color: var(--branColor);
+}
+
+
 @keyframes fadeInLeft {
     from {
         opacity: 0;
