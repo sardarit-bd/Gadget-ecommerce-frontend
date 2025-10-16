@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Printer Management</title>
+    <link rel="stylesheet" href="../css/admin/adminDeshboard.moudle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <!-- <i class="fas fa-print"></i> -->
+                    <img class="admin_deshboard_logo-img" src="../assest/logo.png" alt="">
+                </div>
+                <button class="close-sidebar" id="closeSidebar" aria-label="Close sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-link" data-section="dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#new-product" class="nav-link active" data-section="new-product">
+                    <i class="fas fa-box"></i>
+                    <span>New Product</span>
+                </a>
+                <a href="#new-printer-part" class="nav-link" data-section="new-printer-part">
+                    <i class="fas fa-cogs"></i>
+                    <span>3D Printer Parts</span>
+                </a>
+                <a href="#new-assembly" class="nav-link" data-section="new-assembly">
+                    <i class="fas fa-tools"></i>
+                    <span>New Assemblies</span>
+                </a>
+                <a href="#new-printer-model" class="nav-link" data-section="new-printer-model">
+                    <i class="fas fa-print"></i>
+                    <span>New Printer</span>
+                </a>
+
+                <a href="#new-screw" class="nav-link active" data-section="new-product">
+                    <i class="fas fa-box"></i>
+                    <span>New Screw</span>
+                </a>
+                <a href="#new-electrical-part" class="nav-link" data-section="new-printer-part">
+                    <i class="fas fa-cogs"></i>
+                    <span>New Electrical Parts</span>
+                </a>
+                <a href="#new-commercial-item" class="nav-link" data-section="new-assembly">
+                    <i class="fas fa-tools"></i>
+                    <span>New Commercial Item</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="page-title" id="pageTitle">Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="user-menu">
+                        <div class="notification">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </div>
+                        <div class="user-profile">
+                            <span>Admin</span>
+                            <img src="https://ui-avatars.com/api/?name=Admin+User&background=4361ee&color=fff"
+                                alt="Admin User">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Sections -->
+            <div class="content-wrapper">
+                <!-- Dashboard Section -->
+                <section id="dashboard" class="content-section active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>142</h3>
+                                <p>Total Products</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>87</h3>
+                                <p>Printer Parts</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>56</h3>
+                                <p>Assemblies</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>56</h3>
+                                <p>Assemblies</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>56</h3>
+                                <p>Assemblies</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3>24</h3>
+                                <p>Printer Models</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h2>Recent Activity</h2>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <i class="fas fa-plus-circle success"></i>
+                                <div class="activity-content">
+                                    <p>New product "High-Capacity Toner" added</p>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-edit warning"></i>
+                                <div class="activity-content">
+                                    <p>Printer model "OfficePro 5000" updated</p>
+                                    <span>5 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-exclamation-triangle danger"></i>
+                                <div class="activity-content">
+                                    <p>Low stock alert for "Print Head Assembly"</p>
+                                    <span>1 day ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- New Product Section -->
+                <section id="new-product" class="content-section">
+                    <div class="section-header">
+                        <h2>Add New Product</h2>
+                        <p>Enter product details to add to inventory</p>
+                    </div>
+                    <form class="form-card" id="productForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="product-name">Product Name *</label>
+                                <input type="text" id="product-name" name="product-name" required
+                                    placeholder="Enter product name">
+                            </div>
+                            <div class="form-group">
+                                <label for="product-sku">SKU *</label>
+                                <input type="text" id="product-sku" name="product-sku" required
+                                    placeholder="e.g., PRD-001">
+                            </div>
+                            <div class="form-group">
+                                <label for="product-category">Category *</label>
+                                <select id="product-category" name="product-category" required>
+                                    <option value="">Select category</option>
+                                    <option value="printer">Printer</option>
+                                    <option value="part">Part</option>
+                                    <option value="accessory">Accessory</option>
+                                    <option value="consumable">Consumable</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-price">Price *</label>
+                                <input type="number" id="product-price" name="product-price" step="0.01" required
+                                    placeholder="0.00">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="product-description">Description</label>
+                                <textarea id="product-description" name="product-description" rows="4"
+                                    placeholder="Enter product description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-stock">Stock Quantity *</label>
+                                <input type="number" id="product-stock" name="product-stock" required placeholder="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="product-status">Status *</label>
+                                <select id="product-status" name="product-status" required>
+                                    <option value="active">Active</option>
+                                    <option value="inactive">Inactive</option>
+                                    <option value="discontinued">Discontinued</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Add Product
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Clear Form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- New Printer Part Section -->
+                <section id="new-printer-part" class="content-section">
+                    <div class="section-header">
+                        <h2>Add New Printer Part</h2>
+                        <p>Register a new printer part or component</p>
+                    </div>
+                    <form class="form-card" id="printerPartForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="part-name">Part Name *</label>
+                                <input type="text" id="part-name" name="part-name" required
+                                    placeholder="Enter part name">
+                            </div>
+                            <div class="form-group">
+                                <label for="part-number">Part Number *</label>
+                                <input type="text" id="part-number" name="part-number" required
+                                    placeholder="e.g., PRT-001">
+                            </div>
+                            <div class="form-group">
+                                <label for="part-type">Part Type *</label>
+                                <select id="part-type" name="part-type" required>
+                                    <option value="">Select type</option>
+                                    <option value="mechanical">Mechanical</option>
+                                    <option value="electrical">Electrical</option>
+                                    <option value="electronic">Electronic</option>
+                                    <option value="consumable">Consumable</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="part-manufacturer">Manufacturer</label>
+                                <input type="text" id="part-manufacturer" name="part-manufacturer"
+                                    placeholder="Enter manufacturer">
+                            </div>
+                            <div class="form-group">
+                                <label for="part-compatible">Compatible Models</label>
+                                <input type="text" id="part-compatible" name="part-compatible"
+                                    placeholder="e.g., Model A, Model B">
+                            </div>
+                            <div class="form-group">
+                                <label for="part-price">Unit Price *</label>
+                                <input type="number" id="part-price" name="part-price" step="0.01" required
+                                    placeholder="0.00">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="part-specifications">Specifications</label>
+                                <textarea id="part-specifications" name="part-specifications" rows="4"
+                                    placeholder="Enter technical specifications"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="part-stock">Stock Quantity *</label>
+                                <input type="number" id="part-stock" name="part-stock" required placeholder="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="part-location">Warehouse Location</label>
+                                <input type="text" id="part-location" name="part-location"
+                                    placeholder="e.g., Aisle 3, Shelf B">
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Add Printer Part
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Clear Form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- New Assembly Section -->
+                <section id="new-assembly" class="content-section">
+                    <div class="section-header">
+                        <h2>Create New Assembly</h2>
+                        <p>Create a new assembly from multiple parts</p>
+                    </div>
+                    <form class="form-card" id="assemblyForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="assembly-name">Assembly Name *</label>
+                                <input type="text" id="assembly-name" name="assembly-name" required
+                                    placeholder="Enter assembly name">
+                            </div>
+                            <div class="form-group">
+                                <label for="assembly-code">Assembly Code *</label>
+                                <input type="text" id="assembly-code" name="assembly-code" required
+                                    placeholder="e.g., ASM-001">
+                            </div>
+                            <div class="form-group">
+                                <label for="assembly-type">Assembly Type *</label>
+                                <select id="assembly-type" name="assembly-type" required>
+                                    <option value="">Select type</option>
+                                    <option value="print-head">Print Head Assembly</option>
+                                    <option value="feeder">Paper Feeder Assembly</option>
+                                    <option value="toner">Toner Assembly</option>
+                                    <option value="control">Control Panel Assembly</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="assembly-model">For Printer Model</label>
+                                <input type="text" id="assembly-model" name="assembly-model"
+                                    placeholder="Enter printer model">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="assembly-description">Description</label>
+                                <textarea id="assembly-description" name="assembly-description" rows="3"
+                                    placeholder="Enter assembly description"></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Component Parts</label>
+                                <div class="parts-list" id="partsList">
+                                    <div class="part-item">
+                                        <input type="text" placeholder="Part number" class="part-input">
+                                        <input type="number" placeholder="Qty" class="qty-input" min="1" value="1">
+                                        <button type="button" class="btn btn-remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-secondary btn-add-part" id="addPartBtn">
+                                    <i class="fas fa-plus"></i> Add Part
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <label for="assembly-cost">Total Cost *</label>
+                                <input type="number" id="assembly-cost" name="assembly-cost" step="0.01" required
+                                    placeholder="0.00">
+                            </div>
+                            <div class="form-group">
+                                <label for="assembly-time">Assembly Time (minutes)</label>
+                                <input type="number" id="assembly-time" name="assembly-time" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Create Assembly
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Clear Form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- New Printer Model Section -->
+                <section id="new-printer-model" class="content-section">
+                    <div class="section-header">
+                        <h2>Add New Printer Model</h2>
+                        <p>Register a new printer model in the system</p>
+                    </div>
+                    <form class="form-card" id="printerModelForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="model-name">Model Name *</label>
+                                <input type="text" id="model-name" name="model-name" required
+                                    placeholder="Enter model name">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-number">Model Number *</label>
+                                <input type="text" id="model-number" name="model-number" required
+                                    placeholder="e.g., MDL-001">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-manufacturer">Manufacturer *</label>
+                                <input type="text" id="model-manufacturer" name="model-manufacturer" required
+                                    placeholder="Enter manufacturer">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-type">Printer Type *</label>
+                                <select id="model-type" name="model-type" required>
+                                    <option value="">Select type</option>
+                                    <option value="inkjet">Inkjet</option>
+                                    <option value="laser">Laser</option>
+                                    <option value="3d">3D Printer</option>
+                                    <option value="thermal">Thermal</option>
+                                    <option value="dot-matrix">Dot Matrix</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="model-release">Release Year</label>
+                                <input type="number" id="model-release" name="model-release" min="1990" max="2030"
+                                    placeholder="2024">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-price">MSRP *</label>
+                                <input type="number" id="model-price" name="model-price" step="0.01" required
+                                    placeholder="0.00">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="model-features">Key Features</label>
+                                <textarea id="model-features" name="model-features" rows="3"
+                                    placeholder="Enter key features (one per line)"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="model-print-speed">Print Speed (ppm)</label>
+                                <input type="number" id="model-print-speed" name="model-print-speed" placeholder="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-resolution">Max Resolution (dpi)</label>
+                                <input type="text" id="model-resolution" name="model-resolution"
+                                    placeholder="e.g., 1200x1200">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-connectivity">Connectivity</label>
+                                <input type="text" id="model-connectivity" name="model-connectivity"
+                                    placeholder="e.g., USB, WiFi, Ethernet">
+                            </div>
+                            <div class="form-group">
+                                <label for="model-status">Status *</label>
+                                <select id="model-status" name="model-status" required>
+                                    <option value="current">Current</option>
+                                    <option value="discontinued">Discontinued</option>
+                                    <option value="upcoming">Upcoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="model-notes">Additional Notes</label>
+                                <textarea id="model-notes" name="model-notes" rows="3"
+                                    placeholder="Enter any additional information"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Add Printer Model
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Clear Form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Reports Section -->
+                <!-- <section id="reports" class="content-section">
+                    <div class="section-header">
+                        <h2>Reports & Analytics</h2>
+                        <p>View system reports and analytics</p>
+                    </div>
+                    <div class="reports-grid">
+                        <div class="report-card">
+                            <h3>Inventory Summary</h3>
+                            <p>View current inventory levels and stock status</p>
+                            <button class="btn btn-primary">Generate Report</button>
+                        </div>
+                        <div class="report-card">
+                            <h3>Sales Analytics</h3>
+                            <p>Analyze sales performance and trends</p>
+                            <button class="btn btn-primary">View Analytics</button>
+                        </div>
+                        <div class="report-card">
+                            <h3>Assembly Reports</h3>
+                            <p>Track assembly completion and efficiency</p>
+                            <button class="btn btn-primary">Generate Report</button>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!-- Settings Section -->
+                <!-- <section id="settings" class="content-section">
+                    <div class="section-header">
+                        <h2>System Settings</h2>
+                        <p>Manage your system preferences</p>
+                    </div>
+                    <div class="settings-grid">
+                        <div class="setting-card">
+                            <h3>General Settings</h3>
+                            <p>Configure basic system preferences</p>
+                            <button class="btn btn-primary">Configure</button>
+                        </div>
+                        <div class="setting-card">
+                            <h3>User Management</h3>
+                            <p>Manage users and permissions</p>
+                            <button class="btn btn-primary">Manage Users</button>
+                        </div>
+                        <div class="setting-card">
+                            <h3>Backup & Restore</h3>
+                            <p>System backup and data recovery</p>
+                            <button class="btn btn-primary">Backup Now</button>
+                        </div>
+                    </div>
+                </section> -->
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/admin/admindeshboard.js"></script>
+</body>
+
+</html>
