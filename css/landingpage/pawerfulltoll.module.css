@@ -103,14 +103,14 @@
 }
 
 .tool-img {
-    flex-shrink: 0;
     width: 260px;
     text-align: center;
+    height: fit-content;
 }
 
 .tool-img img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 
@@ -129,6 +129,7 @@
     .tool-card {
         flex-direction: column;
         text-align: center;
+        height: fit-content;
     }
 
     .tool-text {
